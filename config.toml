@@ -1,3 +1,66 @@
-baseURL = "https://blog.martinbechtle.com/"
+baseURL = "https://example.com"
 languageCode = "en-us"
-title = "Martin's Software Engineering Blog"
+title = "Personal website and blog"
+theme = "hugo-refresh"
+disableKinds = [
+  "sitemap",
+  "RSS"
+]
+
+[blackfriday]
+hrefTargetBlank = true
+
+[Taxonomies]
+tag = "tags"
+
+[params]
+jsMinify = false
+jsFingerprint = false
+cssMinify = true
+cssFingerprint = true
+mainColour = "#F39200"
+
+  [params.summary]
+  defaultImage = "/images/default_summary.jpg"
+
+  [params.loading]
+  image = "/images/rings.svg"
+
+  [params.mainPage]
+  fontFamily = "Open Sans"
+
+  [params.sidebar]
+  logo = "/images/refresh-square.svg"
+  fontFamily = "Open Sans"
+
+  [params.navbar]
+  fontFamily = "Open Sans"
+
+  [params.pagNotFound]
+  image = "/images/avataaars_404.png"
+  title = "404 Page Not Found :("
+  subtitle = "This is not the page you were looking for..."
+  imageWidth = "500px"
+
+  [params.homepage]
+  title = "Martin's"
+  subtitle = "Software Engineering Blog"
+  image = "/images/knowledge-is-power.jpg"
+  imageWidth = "500px"
+
+  [params.footer]
+  logo = "/images/refresh-square.svg"
+  linkedin = "https://www.linkedin.com/in/martin-bechtle-148287157/"
+  copyright = "Martin Bechtle - 2019"
+
+#TODO HOW TO CUSTOMISE NAVBAR?
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
